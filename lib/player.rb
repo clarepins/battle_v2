@@ -3,4 +3,9 @@ class Player
   def initialize(name)
     @name = name
   end
-end 
+
+  def hitpoints(initial_hp = 60)
+    initial_hp - 10
+  end
+
+end
