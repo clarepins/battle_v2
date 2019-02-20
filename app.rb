@@ -3,7 +3,7 @@ require 'sinatra/base'
 
 class Battle < Sinatra::Base
   enable :sessions
-  
+
   get '/' do
     erb :index
   end
@@ -18,6 +18,12 @@ class Battle < Sinatra::Base
     @player_1 = session[:player_1]
     @player_2 = session[:player_2]
     erb :play
+  end
+
+  get '/attack' do
+    @player_1 = session[:player_1]
+    @player_2 = session[:player_2]
+    erb :attack
   end
 
   # start the server if ruby file executed directly
