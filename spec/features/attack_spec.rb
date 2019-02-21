@@ -10,8 +10,8 @@ feature 'attack player 2, points decrease by 10' do
   scenario 'Player 1 attacks' do
     sign_in_and_play
     click_link 'Attack'
-    # expect(page).not_to have_content('Taz: 60HP')
-    expect(page).to have_content('Taz: 50HP')
+    expect(page).not_to have_content('Taz: 60HP')
+    expect(page).to have_content('Taz: 50 HP')
   end
 end
 
