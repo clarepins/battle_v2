@@ -1,15 +1,12 @@
 
 class Player
-  attr_reader :name
+  attr_accessor :name, :hp
 
   INITIAL_HP = 60
 
-  def initialize(name)
+  def initialize(name, hp = INITIAL_HP)
     @name = name
-  end
-
-  def attack(initial_hp = INITIAL_HP)
-    initial_hp - 10
+    @hp = hp
   end
 
 end

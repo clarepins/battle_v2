@@ -14,14 +14,3 @@ feature 'attack player 2, points decrease by 10' do
     expect(page).to have_content('Taz: 50 HP')
   end
 end
-
-
-
-# feature 'attack player 2, points decrease by 10' do
-#   scenario 'Player 1 attacks' do
-#     sign_in_and_play
-#     $player_2.hitpoints
-#     click_link 'Attack'
-#     expect($player_2.hitpoints).to eq (50)
-#   end
-# end
